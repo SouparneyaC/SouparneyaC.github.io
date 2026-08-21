@@ -1,0 +1,35 @@
+<style>
+  :root {
+    --font-main: 'Times New Roman', Times, Georgia, serif;
+    --font-secondary: 'Times New Roman', Times, Georgia, serif;
+    --background-color: #FAF9F6;
+    --heading-color: #000;
+    --text-color: #000;
+    --link-color: #000;
+    --visited-color: #000;
+    --blockquote-color: #000;
+  }
+
+  /* Lock the palette regardless of system dark-mode preference —
+     background must never go dark/black. */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background-color: #FAF9F6;
+      --heading-color: #000;
+      --text-color: #000;
+      --link-color: #000;
+      --visited-color: #000;
+      --blockquote-color: #000;
+    }
+  }
+
+  body {
+    font-family: var(--font-main);
+  }
+
+  /* Links stay black per the one-color rule, underlined by default
+     so they're still visibly clickable without relying on color. */
+  a {
+    text-decoration: underline;
+  }
+</style>
