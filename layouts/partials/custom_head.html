@@ -10,8 +10,8 @@
     --blockquote-color: #000;
   }
 
-  /* Lock the palette regardless of system dark-mode preference —
-     background must never go dark/black. */
+  /* Lock the palette regardless of system dark mode preference:
+     background must never go dark or black. */
   @media (prefers-color-scheme: dark) {
     :root {
       --background-color: #FAF9F6;
@@ -27,17 +27,32 @@
     font-family: var(--font-main);
   }
 
-  /* Links stay black per the one-color rule, underlined by default
+  /* Links stay black per the one color rule, underlined by default
      so they're still visibly clickable without relying on color. */
   a {
     text-decoration: underline;
   }
 
-  /* Theme default is a gray (#999) blockquote border — override to
-     black so the "one-finding" callouts stay strictly monochrome,
-     no gray creeping in as a second color. */
+  /* Theme default is a gray (#999) blockquote border, overridden to
+     black so the finding callouts stay strictly monochrome, with no
+     gray creeping in as a second color. */
   blockquote {
     border-left: 2px solid #000;
     font-style: italic;
   }
+
+  /* KaTeX renders in its own font by design; keep it black only,
+     matching the one color rule, and let it sit inline with the
+     serif body text rather than visually competing with it. */
+  .katex { color: #000; }
 </style>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body, {
+    delimiters: [
+      {left: '\\[', right: '\\]', display: true},
+      {left: '\\(', right: '\\)', display: false}
+    ]
+  });"></script>

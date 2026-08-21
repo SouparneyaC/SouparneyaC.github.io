@@ -1,0 +1,43 @@
++++
+title = "France versus Morocco, World Cup quarterfinal"
++++
+
+# France versus Morocco, World Cup quarterfinal
+
+*A case study within [Crowd belief compression in a live forecasting competition](/research/crowd-belief-compression/).*
+
+## Abstract
+
+This case study documents the pricing of fifteen questions for the France versus Morocco quarterfinal of the 2026 World Cup. It differs from every one of the forty nine prior matches in the campaign in one decisive respect: no crowd consensus and no sharp market price was available for any of the fifteen questions at pricing time, so the campaign's usual anchor, an average of crowd consensus and a verified sharp market, could not be applied anywhere, and every estimate had to be built from first principles. It was also the first match priced with access to a newly constructed StatsBomb event level panel spanning the 2018 and 2022 World Cups, including the two teams' one prior competitive meeting, the 2022 semifinal (France 2, Morocco 0). With a much richer data surface available than in any previous match, the real risk shifted from data scarcity to indiscriminate use: fitting a tool to data that happened to exist rather than data that was actually informative for this specific match.
+
+## Data
+
+The StatsBomb panel gives 128 matches, flattened into 6,131 player match rows and 257 team match rows, validated before use rather than assumed correct. The two teams' only prior meeting, the 2022 World Cup semifinal, is StatsBomb covered and was used directly: Mbappé recorded three shots and zero on target that day, Dembélé recorded zero shots, and Hakimi recorded one shot and zero on target. Team and player rates elsewhere in the panel are shrunk toward these World Cup specific priors by empirical Bayes shrinkage (five pseudo matches for team rates, three for player rates) rather than used raw, since a team's World Cup version of itself is not always its normal domestic version.
+
+The absence of any market anchor mattered most on two of the fifteen questions, both team shot count propositions with no market to check them against. This is the campaign's single most expensive repeated error: projecting a team's shot on target or corner count upward from a thin empirical sample, with no market to anchor the estimate, had already cost a net -155.64 relative Brier points across five prior matches. This match faced that exact risk acutely, on exactly the two questions with no market to fall back on.
+
+## Models
+
+Point in time Elo, with \(K = 60\) for knockout matches, margin of victory scaling, and a neutral venue adjusted home term, put France and Morocco's ratings ahead of the match at what turned out to be stale, pre tournament values; a systemic bug (below) meant the ratings actually used at pricing time understated both teams' real form. A Poisson goal rate regression, with a Dixon Coles correction (\(\hat\rho = -0.06\)) and a Negative Binomial overdispersion refit on 49,400 historical matches, gave expected goal rates of \(\lambda_{\text{France}} = 1.441\) and \(\lambda_{\text{Morocco}} = 0.855\). An ordered logit fit directly on match outcomes, rather than derived from the goals model (backtesting elsewhere in the campaign shows the goals pipeline underpredicts favorites by five to eight percentage points), gave a raw \(P(\text{France win}) = 0.5485\).
+
+A live Smarkets query, run after the initial pricing pass, supplied a real liquid price for twelve of the fifteen questions and most consequentially raised the match winner estimate from the ordered logit only 0.52 to a market anchored 0.60, the figure actually submitted. Direct, liquid markets are this campaign's most reliable data tier by a wide margin (a 73.5% historical beat crowd rate), so once a genuine market price appeared, it took priority over the model's own output rather than the reverse.
+
+Two errors were caught and corrected before submission, both worth recording as methodology lessons rather than match trivia. First, the JTC platform's own \texttt{current\_value} API field was initially misread as a possible crowd consensus; cross checking it against 209 settled markets showed it only ever takes the values 0, 50, or 100, a binary open or settled flag, not a probability at all, confirming a separate, earlier finding that pre close crowd consensus is simply not observable through any known API endpoint on this platform. Second, and more consequential: the historical results file this project treats as ground truth records every 2026 World Cup score as missing, so the Elo engine had never actually processed a single real 2026 result all tournament, silently freezing every in progress team's rating at its pre tournament value. A point in time replay, reconstructing each team's actual 2026 results through the Elo formula, corrected France's rating from 2129.05 to 2205.39 and Morocco's from 1984.85 to 2058.10. The bug was caught and corrected before this match's submission, but it is systemic, not specific to this fixture, and affects every in progress World Cup match until it is fixed at the data source rather than patched match by match.
+
+## Why not a learned blend
+
+With a genuinely richer data surface available than any previous match, the natural temptation was to let a learned model decide how to combine the crowd's estimate, my own estimate, and the newly available StatsBomb evidence, rather than deciding by hand. This was tested directly rather than assumed away: an L2 regularized logistic regression and a gradient boosted blender, taking the crowd's estimate and my own as inputs, were evaluated by both a walk forward split and a grouped six fold cross validation on 404 settled campaign questions. Both learned blenders lost to the simple, hand built rule of trusting the crowd baseline, by between 148 and 1,760 RBP equivalent points depending on the validation scheme. The decision was to keep the existing rule based pricing pipeline and not introduce a learned blender, a finding that generalizes well beyond this one match: the campaign's question level sample size is not yet large enough for a multi feature learned blend to be trustworthy, however appealing one looks in principle.
+
+## Results
+
+Fourteen of the fifteen questions were submitted; the fifteenth, a card in stoppage time proposition with no exact historical precedent for its precise phrasing, was withdrawn rather than guessed. The match settled France 2, Morocco 0. The submitted slate gained +169.17 relative Brier points, a new campaign best at the time it settled, with thirteen of fourteen questions beating the crowd (92.9%), and a mean Brier score of 0.1787 against the crowd's 0.2127.
+
+The single biggest win was Brahim Díaz recording one or more shots on target, priced at 0.25 against a crowd of 0.46; the outcome was no, for +36.65 RBP, the third straight validation in this campaign of the rule that a player's own zero rate overrides generic team level context. The only loss came on the match winner question itself: France to win in regulation was submitted at 0.55, having drifted slightly below the 0.60 Smarkets anchored figure in a final pre submission pass, against a crowd of 0.63; the outcome was yes, for -8.75 RBP, a difference small enough to be worth auditing in its own right rather than dismissing as noise.
+
+The single biggest regret was the dropped fifteenth question. It settled no, and the discarded estimate of 0.28 would have won an estimated 220 or more RBP had it been submitted, more than the entire match's eventual net result. The lesson drawn directly from this: "no exact historical precedent for this exact phrasing" should trigger a conservative, explicitly flagged estimate rather than a skip, since skipping a genuinely priceable question is its own kind of unforced error.
+
+## Discussion
+
+This match tested the pricing pipeline under the one condition it had not yet faced: total absence of any crowd or market anchor, on a question set nine of whose fifteen questions were still directly comparable to routine market coverage once the Smarkets revision arrived. It also tested, deliberately, whether a richer data surface should change the pipeline's own decision process, and answered no, by the same margin the campaign's evidence already supported before this match began. The Spain versus Belgium quarterfinal repeated the same no crowd, no market exercise once more, and fared far worse, the honest counterweight to this result and the reason a real market anchor is retained as the default whenever one exists, rather than treated as optional once a model is judged good enough.
+
+[Back to the project overview →](/research/crowd-belief-compression/)
