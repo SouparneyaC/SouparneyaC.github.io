@@ -34,4 +34,4 @@ Self-directed research spanning cryptocurrency markets and derivatives: predicti
 
 Trading system design for Kalshi and Polymarket prediction markets — real-time data collection, automated market-making logic, and backtesting infrastructure to test strategies before they'd ever run live.
 
-*No public repository for this project — the original code was never version-controlled; what survives was recovered from local editor history, not a live GitHub repo.*
+*No public repository — never version-controlled; what survives was recovered from local editor history.*
