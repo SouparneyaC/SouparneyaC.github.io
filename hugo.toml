@@ -1,0 +1,25 @@
+baseURL = "https://souparneyac.github.io/"
+theme = "hugo-bearblog"
+title = "Souparneya Chakrabarti"
+author = "Souparneya Chakrabarti"
+copyright = "© Souparneya Chakrabarti"
+languageCode = "en-US"
+enableRobotsTXT = true
+
+disableKinds = ["taxonomy"]
+ignoreErrors = ["error-disable-taxonomy"]
+
+[permalinks]
+  blog = "/:slug/"
+
+[params]
+  description = "Souparneya Chakrabarti — research interests in information, price discovery, and statistical inference in financial markets."
+  favicon = "images/favicon.png"
+  hideMadeWithLine = true
+
+[markup]
+  [markup.highlight]
+    style = 'friendly'
+    lineNos = true
+    lineNumbersInTable = false
+    codeFences = true
