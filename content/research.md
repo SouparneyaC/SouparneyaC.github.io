@@ -14,7 +14,7 @@ I built a measure of how much overlap exists between different investors' stock 
 
 [Repository →](https://github.com/SouparneyaC/Common-Ownership-in-America-QK-Replication)
 
-## Crowd belief compression in a live forecasting competition
+## [Crowd belief compression in a live forecasting competition](/research/crowd-belief-compression/)
 
 > the crowd's own consensus is systematically too cautious — and correcting for that, not building a smarter model, was the actual source of the edge.
 
