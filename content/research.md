@@ -38,6 +38,14 @@ Built a full forecasting system for the Probability Competition FIFA WC2026, run
 
 [Repository →](https://github.com/SouparneyaC/sportspredict-jtc)
 
+## [Detecting transportation mode from smartphone sensors](/research/transportation-mode-detection/)
+
+> a 14-feature subset recovers essentially all the accuracy the full 36 features ever offered, and that same redundant, non-Gaussian structure is why every tree-based method beats every linear method by 25 to 30 percentage points.
+
+A STAT 385 final project, with Michelle Segura, asking which smartphone sensors matter most for identifying a person's transportation mode and which machine learning method classifies it best. Six independent feature-selection methods agree the 36 raw sensor features are heavily redundant, and nine classification methods, benchmarked on an identical train/test split, show every tree-based model beating every linear one by 25 to 30 points, a tuned XGBoost model reaching 97.29% accuracy. That number is trustworthy specifically because a live methodology bug, caught only when an independent script disagreed with it, was found and corrected before the result shipped.
+
+[Repository →](https://github.com/SouparneyaC/transportation-mode-detection)
+
 ## Independent quantitative research
 
 > crypto volatility is genuinely predictable; the direction of the next price move is not, and knowing which is which matters more than chasing the harder question.
