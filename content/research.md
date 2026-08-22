@@ -14,7 +14,7 @@ I built a measure of how much overlap exists between different investors' stock 
 
 [Repository →](https://github.com/SouparneyaC/Common-Ownership-in-America-QK-Replication)
 
-## Strategic disclosure and reported fund size
+## [Strategic disclosure and reported fund size](/research/strategic-disclosure/)
 
 > funds that revise their 13F filings show a real, one-quarter jump in reported size right when the revision happens, and that jump fully disappears within two quarters.
 
@@ -22,7 +22,7 @@ An ECON537 graduate econometrics paper asking whether funds that amend a previou
 
 *No public repository; this is coursework, not a maintained project.*
 
-## Strategic opacity and the 13F disclosure window
+## [Strategic opacity and the 13F disclosure window](/research/strategic-opacity/)
 
 > the options-heavy funds that file their ownership disclosures right at the legal deadline turn their portfolios over about four to five times faster than funds that file early, exactly the group with the most reason to delay.
 
