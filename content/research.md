@@ -6,13 +6,29 @@ weight = 2
 
 # Research
 
-## Common ownership and institutional disclosure
+## [Common ownership and institutional disclosure](/research/common-ownership/)
 
-> funds that revise their ownership filings show a real, measurable jump in reported size right when the revision happens, not random noise.
+> the same handful of large asset managers now own most of the stake competing S&P 500 companies place weight on each other's profits through, and that concentration keeps rising.
 
-I built a measure of how much overlap exists between different investors' stock holdings, essentially how much of the market is owned by the same handful of large funds, using real regulatory filings, after the standard institutional data sources turned out to be inaccessible to me. A related question I looked at: does the *timing* of a fund's ownership disclosures reveal anything real about what's happening inside the fund. It does: funds that file a revision show a genuine, statistically tested spike in their own reported size that quarter, and that result holds up under several honest robustness checks, not just the first pass.
+I built a measure of how much overlap exists between different investors' stock holdings, essentially how much of the market is owned by the same handful of large funds, using real regulatory filings, after the standard institutional data sources turned out to be inaccessible to me. This replicates and extends a real published paper (Backus, Conlon & Sinkinson, 2019) through 2025, and getting an honest number required finding and fixing four separate, real problems in the underlying filing data along the way, not just running the formula once and trusting the output.
 
 [Repository →](https://github.com/SouparneyaC/Common-Ownership-in-America-QK-Replication)
+
+## Strategic disclosure and reported fund size
+
+> funds that revise their 13F filings show a real, one-quarter jump in reported size right when the revision happens, and that jump fully disappears within two quarters.
+
+An ECON537 graduate econometrics paper asking whether funds that amend a previously filed ownership disclosure look different, in reported size, from funds that don't. Using a staggered difference-in-differences design on over 81,000 fund-quarter observations, the amendment quarter shows a real, statistically significant spike in reported assets under management, equal to more than half the treated group's typical quarterly growth, that vanishes within two quarters. The pattern is consistent with strategic disclosure: the amendment reveals previously under-reported positions, rather than reflecting genuine, sustained outperformance.
+
+*No public repository; this is coursework, not a maintained project.*
+
+## Strategic opacity and the 13F disclosure window
+
+> the options-heavy funds that file their ownership disclosures right at the legal deadline turn their portfolios over about four to five times faster than funds that file early, exactly the group with the most reason to delay.
+
+A comparison of institutions that consistently file their 13F disclosures right at the legal 45-day deadline against ones that file early. The deadline filers are almost entirely options market makers, and they turn over roughly 38% of their positions per quarter against 8% for the early filers, while holding roughly 61% of their book in options against 0% for the early group. Filing at the legal maximum isn't random: it's concentrated in exactly the funds whose positions change fastest and who have the most to lose by revealing them sooner than required.
+
+[Repository →](https://github.com/SouparneyaC/Strategic-Opacity-and-the-13F-Disclosure-Window)
 
 ## [Crowd belief compression in a live forecasting competition](/research/crowd-belief-compression/)
 
