@@ -20,7 +20,7 @@ weight = 3
 - MATH180 — Calculus I
 - MATH181 — Calculus II
 - [MATH210 — Calculus III](/coursework/math210/)
-- MATH215 — Introduction to Advanced Mathematics
+- [MATH215 — Introduction to Advanced Mathematics](/coursework/math215/)
 - MATH294 — Special Topics
 - [MATH320 — Linear Algebra](/coursework/math320/)
 - MATH496 — Independent Study
