@@ -25,7 +25,7 @@ weight = 3
 - [MATH320 — Linear Algebra](/coursework/math320/)
 - MATH496 — Independent Study
 - MATH313 — Analysis I
-- MATH330 — Abstract Algebra I
+- [MATH330 — Abstract Algebra I](/coursework/math330/)
 
 ## Finance
 
