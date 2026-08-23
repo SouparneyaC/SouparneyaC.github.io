@@ -14,6 +14,12 @@ The classes, the graded work behind them, and where each one actually shows up e
 
 Intro CS in Python, Fall 2025. Three graded projects moving from basic scripting to a from-scratch two-sample significance test framed as trading-strategy comparison, to pandas-based data analysis on a daily weather dataset. The significance-test project turns out to implement Welch's t-statistic without ever naming it, the same tool that recurs in my STAT381/STAT481 coursework and in my own quant research.
 
+## [FIN456 — Advanced Investment Management](/coursework/fin456/)
+
+> a report recommending ConocoPhillips cited a company's own announced 20 to 25 percent workforce cut in its sources, then never addressed it in the deck's own risk section.
+
+Fall 2025. A roughly $150,000 endowment, managed by the class in seven sector teams. My team's case for swapping Ovintiv for ConocoPhillips, plus a separate individual holding-analysis report on Lowe's, a different kind of evidence than the self-directed research elsewhere on this site: a professional process operated inside of, not built alone.
+
 ## [STAT381 — Applied Statistical Methods I](/coursework/stat381/)
 
 > a two-sample confidence interval built with the wrong variance assumption got corrected mid-course, from pooled to Welch's unequal-variance method, the same distinction that turns up again in an unrelated computer-science project a semester later.
