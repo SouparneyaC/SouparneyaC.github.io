@@ -34,4 +34,6 @@ Three separately written scripts each fit their final model on the wrong data su
 
 The full paper lives at [Detecting transportation mode from smartphone sensors](/research/transportation-mode-detection/): the complete data, literature review, models, validation, and results.
 
+[Repository →](https://github.com/SouparneyaC/transportation-mode-detection)
+
 [Back to Coursework →](/coursework/)

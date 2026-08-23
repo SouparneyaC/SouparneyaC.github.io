@@ -14,6 +14,8 @@ The classes, the graded work behind them, and where each one actually shows up e
 
 Intro CS in Python, Fall 2025. Three graded projects moving from basic scripting to a from-scratch two-sample significance test framed as trading-strategy comparison, to pandas-based data analysis on a daily weather dataset. The significance-test project turns out to implement Welch's t-statistic without ever naming it, the same tool that recurs in my STAT381/STAT481 coursework and in my own quant research.
 
+[Repository →](https://github.com/SouparneyaC/mcs160-projects)
+
 ## [FIN456 — Advanced Investment Management](/coursework/fin456/)
 
 > a report recommending ConocoPhillips cited a company's own announced 20 to 25 percent workforce cut in its sources, then never addressed it in the deck's own risk section.
@@ -55,6 +57,8 @@ A graduate course, Spring 2026. Structural VAR identification tested against a k
 > a live methodology bug in the final project's modeling pipeline was caught only because a fourth, independently-written script disagreed with the number every other script had been trusting.
 
 Summer 2026. An accelerated eight-week machine learning course; its final project is its own full research page (see Research).
+
+[Repository →](https://github.com/SouparneyaC/transportation-mode-detection)
 
 ## [STATS401 — Probability Theory](/coursework/stats401/)
 
