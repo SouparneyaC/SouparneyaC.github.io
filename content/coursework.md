@@ -48,9 +48,9 @@ Spring 2026. A Dungeons & Dragons monster-stats regression project, categorical 
 
 ## [ECON537 — Time Series and Applied Economic Methods](/coursework/econ537/)
 
-> a class exercise built its own known ground truth first, then tested four estimation methods against it, catching a weak-instrument failure and a small-sample bias in a bootstrap confidence band along the way.
+> a class exercise built its own known ground truth first, then tested four estimation methods against it, and caught the exact reason two of them got the wrong answer.
 
-A graduate course, Spring 2026. Structural VAR identification tested against a known simulated ground truth, and a Virtual Paper in place of a final exam that became a full applied research project (see Research).
+A PhD-level econometrics seminar, Spring 2026. Problem sets moving from pure ARMA theory to real GDP data to a fully simulated structural system tested against a known truth, a referee report on a published paper, and a Virtual Paper in place of a final exam that became a full applied research project (see Research).
 
 ## [STAT385 — Elementary Statistical Techniques for Machine Learning and Big Data](/coursework/stat385/)
 
