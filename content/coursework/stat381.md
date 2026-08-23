@@ -12,6 +12,12 @@ title = "STAT381 — Applied Statistical Methods I"
 
 STAT381, Applied Statistical Methods I, Fall 2025, co-taught by Dr. Jennifer Pajda-De La O and Dr. Duha Hamed, the first course in a three-course sequence under Pajda-De La O that continues into STAT382 and STAT481. The syllabus runs one connected arc: probability foundations, discrete random variables, continuous random variables, sampling distributions, then confidence intervals and hypothesis testing. Coursework: three exams, online homework, five R Projects built around Swirl modules, six graded worksheets, and a final project.
 
+## What the course covered
+
+Grading split six ways: online homework through MyOpenMath (20 percent, unlimited attempts until a problem scored 100), a Gradescope bundle of written homework and a short syllabus quiz (20 percent), five R Projects (15 percent), a final project (9 percent), and three exams at 12 percent each, one after each major content block, Exam 1 on probability and discrete random variables, Exam 2 on continuous random variables and sampling distributions, Exam 3 on confidence intervals and hypothesis testing.
+
+The five R Projects move from guided to self-directed over the semester. The first two are Swirl modules, R's own interactive in-console tutorials, completed rather than built from scratch. The last three aren't: graphing a binomial distribution, graphing the normal distribution curve, and building the sampling distribution behind the Central Limit Theorem, each one requiring the student to produce the plot and the underlying reasoning rather than follow a guided walkthrough.
+
 ## What I actually built
 
 Six R-script worksheets, each built around its own dataset: laptop specs, 2019 MLB batting stats, a "Future Optimism" survey, an animal gestation-and-height regression. Worksheet 6 runs a full simple-linear-regression workflow, Pearson's r, residual diagnostics, a significance test, even though regression was never formally part of the syllabus's own unit list, an early preview of what STAT481 goes deeper into with the same instructor.
