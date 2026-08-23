@@ -32,7 +32,7 @@ weight = 3
 - FIN300 — Introduction to Finance
 - FIN310 — Investments
 - FIN320 — Managerial Finance
-- FIN442 — International Corporate Financial Management
+- [FIN442 — International Corporate Financial Management](/coursework/fin442/)
 - [FIN456 — Advanced Investment Management](/coursework/fin456/)
 - FIN480 — Securities Markets and High-Frequency Trading
 
