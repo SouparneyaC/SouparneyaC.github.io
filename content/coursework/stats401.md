@@ -4,8 +4,6 @@ title = "STATS401 — Probability Theory"
 
 # STATS401 — Probability Theory
 
-*A course entry within [Coursework](/coursework/).*
-
 > a self-built solution catalogue for 86 exam-style questions was built without ever opening the answer key, every derivation independently checked against the exam's own structure instead.
 
 ## Overview

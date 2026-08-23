@@ -4,8 +4,6 @@ title = "MATH210 — Calculus III"
 
 # MATH210 — Calculus III
 
-*A course entry within [Coursework](/coursework/).*
-
 > only two of an estimated fifteen weeks' worksheets survive, and both turned up filed inside a different class's folder entirely.
 
 ## Overview

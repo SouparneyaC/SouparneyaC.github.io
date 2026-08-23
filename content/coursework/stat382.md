@@ -4,8 +4,6 @@ title = "STAT382 — Applying SAS to Data"
 
 # STAT382 — Applying SAS to Data
 
-*A course entry within [Coursework](/coursework/).*
-
 > a placeholder p-value from an early draft nearly went out wrong, caught only by comparing it against the actual regression output: 0.01743 for a result that was really p<2.2e-16.
 
 ## Overview

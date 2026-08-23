@@ -4,8 +4,6 @@ title = "STAT481 — Applied Statistical Methods II"
 
 # STAT481 — Applied Statistical Methods II
 
-*A course entry within [Coursework](/coursework/).*
-
 > a monster-stats regression project dropped Challenge Rating as a predictor entirely, VIF = 37.28, choosing to explain outcomes through the underlying game mechanics the rating was built from instead.
 
 ## Overview

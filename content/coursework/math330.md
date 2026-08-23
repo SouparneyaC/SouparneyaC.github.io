@@ -4,8 +4,6 @@ title = "MATH330 — Abstract Algebra I"
 
 # MATH330 — Abstract Algebra I
 
-*A course entry within [Coursework](/coursework/).*
-
 > the exam's only permitted aid is a single sheet of paper, handwritten only; printing out a photograph of handwritten notes is explicitly against the rules.
 
 ## Overview

@@ -4,7 +4,7 @@ title = "England versus France, third place play-off"
 
 # England versus France, third place play-off
 
-*A case study within [Crowd belief compression in a live forecasting competition](/research/crowd-belief-compression/).*
+[Crowd belief compression in a live forecasting competition](/research/crowd-belief-compression/)
 
 ## Abstract
 

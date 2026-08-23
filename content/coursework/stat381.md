@@ -4,8 +4,6 @@ title = "STAT381 — Applied Statistical Methods I"
 
 # STAT381 — Applied Statistical Methods I
 
-*A course entry within [Coursework](/coursework/).*
-
 > a two-sample confidence interval built with the wrong variance assumption got corrected mid-course, from pooled to Welch's unequal-variance method, the same distinction that turns up again in an unrelated computer-science project a semester later.
 
 ## Overview

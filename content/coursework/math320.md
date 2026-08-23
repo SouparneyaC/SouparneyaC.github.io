@@ -4,8 +4,6 @@ title = "MATH320 — Linear Algebra"
 
 # MATH320 — Linear Algebra
 
-*A course entry within [Coursework](/coursework/).*
-
 > the same eigenvalue-eigenvector pipeline used on an open-book linear algebra final turns out to be exactly what PCA and a common-ownership profit-weight formula are built on, in two unrelated research projects.
 
 ## Overview

@@ -4,8 +4,6 @@ title = "MATH496 — Understanding the Riemann Hypothesis"
 
 # MATH496 — Understanding the Riemann Hypothesis
 
-*A course entry within [Coursework](/coursework/).*
-
 > the poster first found under this class's name belonged to a previous semester's team entirely; the real one turned up loose, filed nowhere near the rest of the course's material.
 
 ## Overview

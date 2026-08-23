@@ -4,8 +4,6 @@ title = "Crypto microstructure: the predictability gap"
 
 # Crypto microstructure: the predictability gap
 
-*A research entry within [Research](/research/).*
-
 > the size of Bitcoin's next one-minute move is forecastable well enough to beat a naive average; which direction it moves in is not.
 
 ## Abstract and introduction

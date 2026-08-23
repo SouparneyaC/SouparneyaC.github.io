@@ -33,13 +33,144 @@
     text-decoration: underline;
   }
 
+  /* --- Nav: middle-dot separators instead of bare whitespace gaps,
+     matching the convention already used in the byline on Home. --- */
+  header nav a {
+    text-decoration: underline;
+  }
+  header nav a:not(:first-child)::before {
+    content: "\00B7";
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 10px;
+    color: #000;
+  }
+
+  /* --- Kicker: a small tracked category label generated per
+     section, replacing the old italic "A research entry within..."
+     breadcrumb line that used to live in the markdown itself. --- */
+  main::before {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    margin: 0 0 7px;
+  }
+  body.research main::before { content: "Research"; }
+  body.coursework main::before { content: "Coursework"; }
+  body.teaching main::before { content: "Teaching"; }
+  body.process main::before { content: "Process"; }
+
+  /* --- Heading scale and rhythm: tight between a label and what it
+     belongs to, loose between unrelated blocks. The stock theme sets
+     no heading scale at all beyond color; this is the whole fix for
+     "no design beyond a font swap." --- */
+  h1 {
+    font-size: 33px;
+    font-weight: 400;
+    line-height: 1.24;
+    margin: 0 0 46px;
+  }
+  content h2 {
+    font-size: 19px;
+    font-weight: 400;
+    margin: 42px 0 13px;
+  }
+  content h2:first-of-type {
+    margin-top: 0;
+  }
+  content p {
+    font-size: 18px;
+    line-height: 1.68;
+    margin: 0 0 22px;
+  }
+
+  /* --- Blockquote: on an individual entry page (not a section
+     index, which lists several blockquotes, one per entry), float
+     the finding into the right margin as a quiet, rule-topped note
+     instead of a decorative left-border callout sitting directly
+     under the title. Falls back to the plain inline treatment below
+     ~1000px, where there's no room for a true margin. --- */
+  blockquote {
+    border-left: 2px solid #000;
+    font-style: italic;
+  }
+  @media (min-width: 1000px) {
+    body.page.research main content > blockquote,
+    body.page.coursework main content > blockquote,
+    body.page.teaching main content > blockquote,
+    body.page.process main content > blockquote {
+      float: right;
+      clear: right;
+      width: 220px;
+      margin: 4px -260px 24px 0;
+      padding: 9px 0 0;
+      border-left: none;
+      border-top: 1px solid #000;
+      font-style: normal;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+  }
+
+  /* --- Numbered sections: real order (Abstract, Data, Literature
+     Review, Models...), not decorative. Scoped to individual entry
+     pages only (a non-empty section class), never the section
+     indexes, whose h2s are project titles rather than a methodology
+     sequence, and which also carry the bare "page" class in this
+     theme with no way to tell them apart from a single entry page
+     except by section. --- */
+  body.page.research main content,
+  body.page.coursework main content,
+  body.page.teaching main content,
+  body.page.process main content {
+    counter-reset: section;
+  }
+  body.page.research main content > h2,
+  body.page.coursework main content > h2,
+  body.page.teaching main content > h2,
+  body.page.process main content > h2 {
+    counter-increment: section;
+  }
+  body.page.research main content > h2::before,
+  body.page.coursework main content > h2::before,
+  body.page.teaching main content > h2::before,
+  body.page.process main content > h2::before {
+    content: counter(section) ". ";
+  }
+
   /* Theme default is a gray (#999) blockquote border, overridden to
      black so the finding callouts stay strictly monochrome, with no
      gray creeping in as a second color. */
   blockquote {
     border-left: 2px solid #000;
-    font-style: italic;
   }
+
+  /* Footnotes: a real rule separating them from the body, matching
+     how a printed page marks the shift from argument to citation. */
+  .footnotes {
+    margin-top: 50px;
+    padding-top: 16px;
+    border-top: 1px solid #000;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .footnotes hr { display: none; }
+
+  /* Tables: hairline row rules only, no boxes or shading. */
+  content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 0 26px;
+    font-size: 16px;
+  }
+  content th,
+  content td {
+    text-align: left;
+    padding: 7px 18px 7px 0;
+    border-bottom: 1px solid #000;
+  }
+  content th { font-weight: 400; }
 
   /* KaTeX renders in its own font by design; keep it black only,
      matching the one color rule, and let it sit inline with the

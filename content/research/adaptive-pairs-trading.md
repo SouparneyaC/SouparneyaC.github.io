@@ -4,8 +4,6 @@ title = "Adaptive pairs trading across a structural break"
 
 # Adaptive pairs trading across a structural break
 
-*A research entry within [Research](/research/).*
-
 > the "smart" spread stays within a few units of zero through a 2024 divergence that pushes the naive spread past minus sixty.
 
 ## Abstract and introduction

@@ -4,8 +4,6 @@ title = "ECON537 — Time Series and Applied Economic Methods"
 
 # ECON537 — Time Series and Applied Economic Methods
 
-*A course entry within [Coursework](/coursework/).*
-
 > a class exercise built its own known ground truth first, then tested four estimation methods against it, and caught the exact reason two of them got the wrong answer.
 
 ## Overview

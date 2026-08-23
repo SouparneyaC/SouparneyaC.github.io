@@ -4,8 +4,6 @@ title = "The Verification Loop"
 
 # The Verification Loop
 
-*A process entry within [Process](/process/).*
-
 > checked against a tool, not against itself.
 
 A claim gets re-derived independently before the existing note is opened, then checked against a tool.[^critic] Confirmed, contradicted, or flagged unverifiable. Correction cycles are capped by design. Unbounded self-correction degrades as often as it helps.

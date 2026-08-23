@@ -4,8 +4,6 @@ title = "STAT385 — Elementary Statistical Techniques for Machine Learning and 
 
 # STAT385 — Elementary Statistical Techniques for Machine Learning and Big Data
 
-*A course entry within [Coursework](/coursework/).*
-
 > a live methodology bug in the final project's modeling pipeline was caught only because a fourth, independently-written script disagreed with the number every other script had been trusting.
 
 ## Overview

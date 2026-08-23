@@ -4,8 +4,6 @@ title = "MATH215 — Introduction to Advanced Mathematics"
 
 # MATH215 — Introduction to Advanced Mathematics
 
-*A course entry within [Coursework](/coursework/).*
-
 > the same syllabus that spends five weeks on worksheets before a single formal proof gets written calls its own back half "a preview of a standard proof-based course," not the real thing yet.
 
 ## Overview

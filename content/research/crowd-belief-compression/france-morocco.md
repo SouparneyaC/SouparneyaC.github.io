@@ -4,7 +4,7 @@ title = "France versus Morocco, World Cup quarterfinal"
 
 # France versus Morocco, World Cup quarterfinal
 
-*A case study within [Crowd belief compression in a live forecasting competition](/research/crowd-belief-compression/).*
+[Crowd belief compression in a live forecasting competition](/research/crowd-belief-compression/)
 
 ## Abstract
 
