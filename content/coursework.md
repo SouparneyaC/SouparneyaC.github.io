@@ -9,7 +9,7 @@ weight = 3
 ## Statistics
 
 - [STAT381 — Applied Statistical Methods I](/coursework/stat381/)
-- STAT382 — Statistical Methods and Computing
+- [STAT382 — Applying SAS to Data](/coursework/stat382/)
 - [STAT481 — Applied Statistical Methods II](/coursework/stat481/)
 - [STAT385 — Elementary Statistical Techniques for Machine Learning and Big Data](/coursework/stat385/)
 - [STATS401 — Probability Theory](/coursework/stats401/)
