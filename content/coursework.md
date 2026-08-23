@@ -23,7 +23,7 @@ weight = 3
 - [MATH215 — Introduction to Advanced Mathematics](/coursework/math215/)
 - MATH294 — Special Topics
 - [MATH320 — Linear Algebra](/coursework/math320/)
-- MATH496 — Independent Study
+- [MATH496 — Understanding the Riemann Hypothesis](/coursework/math496/)
 - MATH313 — Analysis I
 - [MATH330 — Abstract Algebra I](/coursework/math330/)
 
