@@ -19,7 +19,7 @@ weight = 3
 - MATH121 — Precalculus Mathematics
 - MATH180 — Calculus I
 - MATH181 — Calculus II
-- MATH210 — Calculus III
+- [MATH210 — Calculus III](/coursework/math210/)
 - MATH215 — Introduction to Advanced Mathematics
 - MATH294 — Special Topics
 - [MATH320 — Linear Algebra](/coursework/math320/)
