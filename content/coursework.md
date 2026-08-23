@@ -34,6 +34,7 @@ weight = 3
 - FIN320 — Managerial Finance
 - FIN442 — International Corporate Financial Management
 - [FIN456 — Advanced Investment Management](/coursework/fin456/)
+- FIN480 — Securities Markets and High-Frequency Trading
 
 ## Economics
 
