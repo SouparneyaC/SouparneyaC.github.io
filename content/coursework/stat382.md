@@ -12,6 +12,12 @@ title = "STAT382 — Applying SAS to Data"
 
 STAT382, Applying SAS to Data, Spring 2026, coordinated by Dr. Jennifer Pajda-De La O with sections taught by Dr. Duha Hamed and Dr. Dale Embers, the second course in the STAT381→382→481 sequence. The course is two tools built around one statistical arc: Units 1 through 4 extend STAT381's material into R, data management, graphics, regression, ANOVA, then Unit 5 pivots the identical statistical content onto SAS for the back half of the semester.
 
+## What the course covered
+
+Grading splits into two roughly even halves that track the R-to-SAS structure directly: the R side (Swirl projects 3 percent, in-class worksheets 12 percent, graded homework 6 percent, readings 10 percent, quizzes 9 percent, Exam 1 15 percent) and a matching SAS side (Project 1 and Project 2 at 15 percent each, Exam 2 15 percent). Five units carry the statistical arc: R basics, descriptive statistics and probability distributions, sampling distributions and inference for means, regression and ANOVA, then SAS.
+
+The SAS unit doesn't introduce new statistics; it revisits the same ground in a different tool. The last two weeks of the semester work through evaluating quantitative data, comparing means with t-tests, and correlation and regression, the same topics already covered in R earlier in the semester, now done in SAS instead. Exam 1 tests the R half alone; Exam 2, in finals week, tests the SAS half alone.
+
 ## What I actually built
 
 Both graded Projects reuse the same medical dataset. Project 1, in R, stays descriptive. Project 2 extends it into inferential simple linear regression, pulse rate against age, in SAS, the same dataset carried across the language switch on purpose. A one-way ANOVA assignment tests whether NFL players' ages differ by position group, Defense, Offense, Special Teams, using a 2016 NFL dataset.
