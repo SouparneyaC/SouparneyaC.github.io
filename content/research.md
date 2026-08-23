@@ -10,15 +10,15 @@ weight = 2
 
 > the same handful of large asset managers now own most of the stake competing S&P 500 companies place weight on each other's profits through, and that concentration keeps rising.
 
-I built a measure of how much overlap exists between different investors' stock holdings, essentially how much of the market is owned by the same handful of large funds, using real regulatory filings, after the standard institutional data sources turned out to be inaccessible to me. This replicates and extends a real published paper (Backus, Conlon & Sinkinson, 2019) through 2025, and getting an honest number required finding and fixing four separate, real problems in the underlying filing data along the way, not just running the formula once and trusting the output.
+I built a measure of how much overlap exists between different investors' stock holdings, essentially how much of the market is owned by the same handful of large funds, using regulatory filings, after the standard institutional data sources turned out to be inaccessible to me. This replicates and extends a published paper (Backus, Conlon & Sinkinson, 2019) through 2025. Getting the number right required finding and fixing four separate problems in the underlying filing data, not just running the formula once and trusting the output.
 
 [Repository →](https://github.com/SouparneyaC/Common-Ownership-in-America-QK-Replication)
 
 ## [Strategic disclosure and reported fund size](/research/strategic-disclosure/)
 
-> funds that revise their 13F filings show a real, one-quarter jump in reported size right when the revision happens, and that jump fully disappears within two quarters.
+> funds that revise their 13F filings show a one-quarter jump in reported size right when the revision happens, and that jump fully disappears within two quarters.
 
-An ECON537 graduate econometrics paper asking whether funds that amend a previously filed ownership disclosure look different, in reported size, from funds that don't. Using a staggered difference-in-differences design on over 81,000 fund-quarter observations, the amendment quarter shows a real, statistically significant spike in reported assets under management, equal to more than half the treated group's typical quarterly growth, that vanishes within two quarters. The pattern is consistent with strategic disclosure: the amendment reveals previously under-reported positions, rather than reflecting genuine, sustained outperformance.
+An ECON537 graduate econometrics paper asking whether funds that amend a previously filed ownership disclosure look different, in reported size, from funds that don't. Using a staggered difference-in-differences design on over 81,000 fund-quarter observations, the amendment quarter shows a statistically significant spike in reported assets under management, equal to more than half the treated group's typical quarterly growth, that vanishes within two quarters. The pattern is consistent with strategic disclosure: the amendment reveals previously under-reported positions, rather than reflecting sustained outperformance.
 
 *No public repository; this is coursework, not a maintained project.*
 
@@ -32,9 +32,9 @@ A comparison of institutions that consistently file their 13F disclosures right 
 
 ## [Crowd belief compression in a live forecasting competition](/research/crowd-belief-compression/)
 
-> the crowd's own consensus is systematically too cautious, and correcting for that, not building a smarter model, was the actual source of the edge.
+> the crowd's own consensus is systematically too cautious, and correcting for that was the actual source of the edge.
 
-Built a full forecasting system for the Probability Competition FIFA WC2026, run by Jump Trading and Sports Predict. The central finding: the crowd consensus is biased toward uncertainty, holding back from confident predictions even when the evidence clearly supports one, and that bias was stable even after the number of predictions used to measure it doubled. I also tested, rigorously and more than once, whether a machine-learning model could improve on a hand-built statistical approach. It couldn't, at this amount of data, a tested conclusion, not an assumption.
+Built a full forecasting system for the Probability Competition FIFA WC2026, run by Jump Trading and Sports Predict. The central finding: the crowd consensus is biased toward uncertainty, holding back from confident predictions even when the evidence clearly supports one, and that bias was stable even after the number of predictions used to measure it doubled. I also tested, more than once, whether a machine-learning model could improve on a hand-built statistical approach. It couldn't, at this amount of data. That's a tested conclusion, not an assumption.
 
 [Repository →](https://github.com/SouparneyaC/sportspredict-jtc)
 
@@ -48,9 +48,9 @@ A STAT 385 final project, with Michelle Segura, asking which smartphone sensors 
 
 ## Independent quantitative research
 
-> crypto volatility is genuinely predictable; the direction of the next price move is not, and knowing which is which matters more than chasing the harder question.
+> crypto volatility is predictable; the direction of the next price move is not, and knowing which is which matters more than chasing the harder question.
 
-Self-directed research spanning cryptocurrency markets and derivatives: predicting how much an asset's price will swing (a real, working result) as distinct from predicting which way it'll move (honestly reported as close to unpredictable); how "fat-tailed" extreme price moves really are compared to a standard benchmark; whether a neural network can hedge an option position better than the standard textbook formula; and an adaptive pairs-trading strategy that adjusts itself as market conditions shift.
+Self-directed research spanning cryptocurrency markets and derivatives: predicting how much an asset's price will swing (a working result) as distinct from predicting which way it'll move (reported as close to unpredictable); how "fat-tailed" extreme price moves are compared to a standard benchmark; whether a neural network can hedge an option position better than the standard textbook formula; and an adaptive pairs-trading strategy that adjusts itself as market conditions shift.
 
 [Repository →](https://github.com/SouparneyaC/quant-research-lab)
 
