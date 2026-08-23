@@ -46,11 +46,17 @@ A STAT 385 final project, with Michelle Segura, asking which smartphone sensors 
 
 [Repository →](https://github.com/SouparneyaC/transportation-mode-detection)
 
+## [Adaptive pairs trading across a structural break](/research/adaptive-pairs-trading/)
+
+> the "smart" spread stays within a few units of zero through a 2024 divergence that pushes the naive spread past minus sixty.
+
+A Kalman filter re-estimates the hedge ratio between the MSCI Australia and MSCI Canada ETFs every day instead of fixing it once, and a Random Forest classifier decides whether a wide spread is actually likely to revert before a trade is placed at all. The strategy trades only 72 days across six years, reaches an annualized Sharpe ratio of 0.36, and earns most of its profit by staying out of the market during a 2024 structural divergence a fixed hedge ratio has no way to see coming.
+
+[Repository →](https://github.com/SouparneyaC/adaptive-pairs-trading)
+
 ## Independent quantitative research
 
-> crypto volatility is predictable; the direction of the next price move is not, and knowing which is which matters more than chasing the harder question.
-
-Self-directed research spanning cryptocurrency markets and derivatives: predicting how much an asset's price will swing (a working result) as distinct from predicting which way it'll move (reported as close to unpredictable); how "fat-tailed" extreme price moves are compared to a standard benchmark; whether a neural network can hedge an option position better than the standard textbook formula; and an adaptive pairs-trading strategy that adjusts itself as market conditions shift.
+Self-directed research spanning cryptocurrency markets and derivatives not yet built into their own pages: how "fat-tailed" extreme price moves in Bitcoin compare to a standard benchmark, and whether a neural network can hedge an option position better than the standard textbook formula.
 
 [Repository →](https://github.com/SouparneyaC/quant-research-lab)
 
