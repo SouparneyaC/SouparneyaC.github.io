@@ -54,6 +54,14 @@ A Kalman filter re-estimates the hedge ratio between the MSCI Australia and MSCI
 
 [Repository →](https://github.com/SouparneyaC/adaptive-pairs-trading)
 
+## [Crypto microstructure: the predictability gap](/research/crypto-microstructure/)
+
+> the size of Bitcoin's next one-minute move is forecastable well enough to beat a naive average; which direction it moves in is not.
+
+Across Bitcoin, Ethereum, Solana, and Dogecoin at one-minute resolution, price direction sits at essentially chance, every classifier landing within a point or two of a coin flip, while the size of the next move is forecastable: a Ridge regression reaches an out-of-sample R² of 0.274 for Bitcoin, and the autocorrelation of absolute returns stays above 0.25 even thirty minutes out. Volatility has memory; direction, on this evidence, does not.
+
+[Repository →](https://github.com/SouparneyaC/crypto-microstructure-predictability-gap)
+
 ## Independent quantitative research
 
 Self-directed research spanning cryptocurrency markets and derivatives not yet built into their own pages: how "fat-tailed" extreme price moves in Bitcoin compare to a standard benchmark, and whether a neural network can hedge an option position better than the standard textbook formula.
