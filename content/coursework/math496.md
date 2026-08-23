@@ -16,6 +16,8 @@ MATH496, "Understanding the Riemann Hypothesis," Spring 2026, a MURL (MSCS Under
 
 With research partner Paul Valiusis, a poster covering five sections: the Prime Number Theorem and its equivalent Chebyshev-function formulations, the complex analysis machinery needed to state the Hypothesis rigorously, analytic continuation and the residue theorem as the bridge to extending the zeta function, the Hypothesis itself, that every nontrivial zero of \(\zeta(s)\) in the critical strip has real part exactly \(\tfrac12\), and seven listed equivalent statements.
 
+![Understanding the Riemann Hypothesis, a research poster by Souparneya Chakrabarti and Paul Valiusis, MSCS Undergraduate Research Laboratory, Spring 2026](/images/coursework/math496/murl_poster_spring2026.png)
+
 A separate personal synthesis document works through six of those equivalences in more depth, each restating the same underlying claim in a different branch of mathematics: the Prime Number Theorem's error term never growing worse than \(O(\sqrt{x}\log x)\); Robin's Inequality, a purely arithmetic bound with no complex analysis at all, where a single counterexample integer would disprove the Hypothesis outright; the Liouville function's cumulative sum behaving like a fair-coin random walk; Xian-Jin Li's criterion, converting the zero-location question into a sequence of non-negativity conditions; a divisibility-matrix determinant bound; and the de Bruijn-Newman constant, the equivalence connecting the Hypothesis to the eigenvalues of a Hermitian operator, a spectral, quantum-mechanics-adjacent approach.
 
 ## Performance
