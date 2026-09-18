@@ -6,70 +6,37 @@ weight = 2
 
 # Research
 
-## [Common ownership and institutional disclosure](/research/common-ownership/)
+**QuantKiosk**
 
-> the same handful of large asset managers now own most of the stake competing S&P 500 companies place weight on each other's profits through, and that concentration keeps rising.
+Built a research pipeline on SEC 13F institutional-holdings data from the QuantKiosk API, covering 311 S&P 500 firms from 2013 through 2025, and audited the raw filing data — correcting XBRL unit errors, post-split share restatements, and an amendment double-count, then repairing corrupted security identifiers with a fuzzy entity-resolution step validated at 100% precision — before computing any measure on top of it. That pipeline became three projects:  
+[Common ownership and institutional disclosure](/research/common-ownership/)  
+[Strategic disclosure and reported fund size](/research/strategic-disclosure/)  
+[Strategic opacity and the 13F disclosure window](/research/strategic-opacity/)
 
-I built a measure of how much overlap exists between different investors' stock holdings, essentially how much of the market is owned by the same handful of large funds, using regulatory filings, after the standard institutional data sources turned out to be inaccessible to me. This replicates and extends a published paper (Backus, Conlon & Sinkinson, 2019) through 2025. Getting the number right required finding and fixing four separate problems in the underlying filing data, not just running the formula once and trusting the output.
+**[SportsPredict.com — Jump Trading Probability Competition, FIFA World Cup 2026](/research/crowd-belief-compression/)**
 
-[Repository →](https://github.com/SouparneyaC/Common-Ownership-in-America-QK-Replication)
-
-## [Strategic disclosure and reported fund size](/research/strategic-disclosure/)
-
-> funds that revise their 13F filings show a one-quarter jump in reported size right when the revision happens, and that jump fully disappears within two quarters.
-
-An ECON537 graduate econometrics paper asking whether funds that amend a previously filed ownership disclosure look different, in reported size, from funds that don't. Using a staggered difference-in-differences design on over 81,000 fund-quarter observations, the amendment quarter shows a statistically significant spike in reported assets under management, equal to more than half the treated group's typical quarterly growth, that vanishes within two quarters. The pattern is consistent with strategic disclosure: the amendment reveals previously under-reported positions, rather than reflecting sustained outperformance.
-
-*No public repository; this is coursework, not a maintained project.*
-
-## [Strategic opacity and the 13F disclosure window](/research/strategic-opacity/)
-
-> the options-heavy funds that file their ownership disclosures right at the legal deadline turn their portfolios over about four to five times faster than funds that file early, exactly the group with the most reason to delay.
-
-A comparison of institutions that consistently file their 13F disclosures right at the legal 45-day deadline against ones that file early. The deadline filers are almost entirely options market makers, and they turn over roughly 38% of their positions per quarter against 8% for the early filers, while holding roughly 61% of their book in options against 0% for the early group. Filing at the legal maximum isn't random: it's concentrated in exactly the funds whose positions change fastest and who have the most to lose by revealing them sooner than required.
-
-[Repository →](https://github.com/SouparneyaC/Strategic-Opacity-and-the-13F-Disclosure-Window)
-
-## [Crowd belief compression in a live forecasting competition](/research/crowd-belief-compression/)
-
-> the crowd's own consensus is systematically too cautious, and correcting for that was the actual source of the edge.
-
-Built a full forecasting system for the Probability Competition FIFA WC2026, run by Jump Trading and Sports Predict. The central finding: the crowd consensus is biased toward uncertainty, holding back from confident predictions even when the evidence clearly supports one, and that bias was stable even after the number of predictions used to measure it doubled. I also tested, more than once, whether a machine-learning model could improve on a hand-built statistical approach. It couldn't, at this amount of data. That's a tested conclusion, not an assumption.
+Built a statistical forecasting pipeline for 49,000+ international matches back to 1872, ingesting live match data and real-time odds from exchange APIs, computing point-in-time Elo ratings to remove look-ahead bias. Modeled goal rates with a Poisson regression using a Dixon-Coles low-score correction and Negative Binomial overdispersion, alongside an ordered logit match-result model. Quantified a structural compression of the crowd consensus toward 50% and finished in the top 1.1% of ~3,900 forecasters.
 
 [Repository →](https://github.com/SouparneyaC/sportspredict-jtc)
 
-## [Detecting transportation mode from smartphone sensors](/research/transportation-mode-detection/)
+**[Detecting Transportation Mode from Smartphone Sensors](/research/transportation-mode-detection/)**
 
-> a 14-feature subset recovers essentially all the accuracy the full 36 features ever offered, and that same redundant, non-Gaussian structure is why every tree-based method beats every linear method by 25 to 30 percentage points.
-
-A STAT 385 final project, with Michelle Segura, asking which smartphone sensors matter most for identifying a person's transportation mode and which machine learning method classifies it best. Six independent feature-selection methods agree the 36 raw sensor features are heavily redundant, and nine classification methods, benchmarked on an identical train/test split, show every tree-based model beating every linear one by 25 to 30 points, a tuned XGBoost model reaching 97.29% accuracy. That number is trustworthy specifically because a live methodology bug, caught only when an independent script disagreed with it, was found and corrected before the result shipped.
+Built a classification pipeline on the TMD smartphone-sensor dataset (Carpineti et al., 2018) to identify transportation mode from 36 features across nine sensors, with Michelle Segura. Benchmarked nine classifiers on an identical train/test split, from classification trees and PLS-DA through random forests and XGBoost, with tuned XGBoost reaching 97.29% test accuracy. Ran six feature-selection methods — ANOVA, PCA, LASSO, Boruta, RFE, and conditional permutation importance — and showed 14 of the 36 features recover near-peak accuracy.
 
 [Repository →](https://github.com/SouparneyaC/transportation-mode-detection)
 
-## [Adaptive pairs trading across a structural break](/research/adaptive-pairs-trading/)
+**[Adaptive Pairs Trading Across a Structural Break](/research/adaptive-pairs-trading/)**
 
-> the "smart" spread stays within a few units of zero through a 2024 divergence that pushes the naive spread past minus sixty.
-
-A Kalman filter re-estimates the hedge ratio between the MSCI Australia and MSCI Canada ETFs every day instead of fixing it once, and a Random Forest classifier decides whether a wide spread is actually likely to revert before a trade is placed at all. The strategy trades only 72 days across six years, reaches an annualized Sharpe ratio of 0.36, and earns most of its profit by staying out of the market during a 2024 structural divergence a fixed hedge ratio has no way to see coming.
+Designed and backtested a two-layer regime-adaptive pairs-trading strategy on the MSCI Australia and MSCI Canada ETFs: a Kalman filter re-estimates the hedge ratio daily instead of fixing it once, gated by a Random Forest classifier that decides whether a wide spread is actually likely to revert before a trade is placed. The strategy trades only 72 days across six years, reaches an annualized Sharpe ratio of 0.36, and preserves capital through a 2024 structural divergence a fixed hedge ratio has no way to see coming.
 
 [Repository →](https://github.com/SouparneyaC/adaptive-pairs-trading)
 
-## [Crypto microstructure: the predictability gap](/research/crypto-microstructure/)
+**[Crypto microstructure: Forecasting to beat the naive average](/research/crypto-microstructure/)**
 
-> the size of Bitcoin's next one-minute move is forecastable well enough to beat a naive average; which direction it moves in is not.
-
-Across Bitcoin, Ethereum, Solana, and Dogecoin at one-minute resolution, price direction sits at essentially chance, every classifier landing within a point or two of a coin flip, while the size of the next move is forecastable: a Ridge regression reaches an out-of-sample R² of 0.274 for Bitcoin, and the autocorrelation of absolute returns stays above 0.25 even thirty minutes out. Volatility has memory; direction, on this evidence, does not.
+Found and quantified a real predictability asymmetry across Bitcoin, Ethereum, Solana, and Dogecoin at one-minute resolution: price direction sits at essentially chance, every classifier landing within a point or two of a coin flip, while the size of the next move is forecastable — a Ridge regression reaches an out-of-sample R² of 0.274 for Bitcoin, and the autocorrelation of absolute returns stays above 0.25 even thirty minutes out. Published as a formal research package built entirely independently, with no course or competition requiring it.
 
 [Repository →](https://github.com/SouparneyaC/crypto-microstructure-predictability-gap)
-
-## Independent quantitative research
-
-Self-directed research spanning cryptocurrency markets and derivatives not yet built into their own pages: how "fat-tailed" extreme price moves in Bitcoin compare to a standard benchmark, and whether a neural network can hedge an option position better than the standard textbook formula.
-
-[Repository →](https://github.com/SouparneyaC/quant-research-lab)
 
 ## Prediction market infrastructure
 
 Trading system design for Kalshi and Polymarket prediction markets: real-time data collection, automated market-making logic, and backtesting infrastructure to test strategies before they'd ever run live.
-
-*No public repository, never version-controlled; what survives was recovered from local editor history.*
