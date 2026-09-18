@@ -37,6 +37,6 @@ Found and quantified a real predictability asymmetry across Bitcoin, Ethereum, S
 
 [Repository →](https://github.com/SouparneyaC/crypto-microstructure-predictability-gap)
 
-## Prediction market infrastructure
+**[Prediction market infrastructure: Kalshi and Polymarket](/research/prediction-market-infrastructure/)**
 
-Trading system design for Kalshi and Polymarket prediction markets: real-time data collection, automated market-making logic, and backtesting infrastructure to test strategies before they'd ever run live.
+Trading system design for Kalshi and Polymarket prediction markets: a self-healing, unattended data-collection pipeline, two independently-derived barrier-crossing fair-value models, an Avellaneda-Stoikov market maker, and a half-Kelly capital allocator. No backtest or live result exists, traced directly to a scheduled collector job that never executed successfully.
