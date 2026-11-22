@@ -37,6 +37,8 @@ Found and quantified a real predictability asymmetry across Bitcoin, Ethereum, S
 
 [Repository →](https://github.com/SouparneyaC/crypto-microstructure-predictability-gap)
 
-**[Prediction market infrastructure: Kalshi and Polymarket](/research/prediction-market-infrastructure/)**
+**[Designing a low-latency market data system](/research/prediction-market-infrastructure/)**
 
-Trading system design for Kalshi and Polymarket prediction markets: a self-healing, unattended data-collection pipeline, two independently-derived barrier-crossing fair-value models, an Avellaneda-Stoikov market maker, and a half-Kelly capital allocator. No backtest or live result exists, traced directly to a scheduled collector job that never executed successfully.
+Built a live order book service for Kalshi's prediction markets: one Python process on a $12-a-month server in the same Amazon region as the exchange, with no database in the path. A book is updated a median 0.01 ms after the process receives a message, a sequence counter finds lost updates and a fresh snapshot repairs the book, and a timer on every stage from the exchange's timestamp to the browser feeds a once-a-minute measurement store. Measured with a 48-hour test, an overnight capacity test up to 1,000 books and an evening CPU profile.
+
+[Repository →](https://github.com/SouparneyaC/kalshi-orderbook-dashboard)

@@ -172,6 +172,18 @@
   }
   content th { font-weight: 400; }
 
+  /* Plots are SVG and drawn at about 720px. On a wide screen they run a little wider than the text column so their labels stay
+     legible; below 1000px they fall back to the theme's own 100%-width image rule. Only SVG images are affected. */
+  @media (min-width: 1000px) {
+    body.page.research content img[src$=".svg"] {
+      display: block;
+      width: 720px;
+      max-width: none;
+      height: auto;
+      margin: 0 0 26px -96px;
+    }
+  }
+
   /* KaTeX renders in its own font by design; keep it black only,
      matching the one color rule, and let it sit inline with the
      serif body text rather than visually competing with it. */
