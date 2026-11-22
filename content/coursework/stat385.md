@@ -24,7 +24,7 @@ The back half covers regularization, dimension reduction, and tree-based methods
 
 ## The final project
 
-The course's final project, with Michelle Segura, is a full applied machine learning study of a smartphone sensor dataset: which of 36 features actually carry information about a person's transportation mode, and which classifier identifies it best. Six feature-selection methods, nine classification methods, and a full validation pass make up the final report.
+The course's final project is a full applied machine learning study of a smartphone sensor dataset: which of 36 features actually carry information about a person's transportation mode, and which classifier identifies it best. Six feature-selection methods, nine classification methods, and a full validation pass make up the final report.
 
 ## Performance
 

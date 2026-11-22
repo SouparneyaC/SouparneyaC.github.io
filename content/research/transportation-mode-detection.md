@@ -8,7 +8,7 @@ title = "Detecting transportation mode from smartphone sensors"
 
 ## Abstract and introduction
 
-Smartphones carry enough sensors to infer how someone is getting around, walking, driving, riding a bus, riding a train, without ever asking them. The open question is which of those sensors actually carry that information, and which model turns them into an accurate guess. Michelle Segura and I answered both, as a final project for STAT 385 at UIC, using the TMD dataset from Carpineti, Lomonaco, Bedogni, Di Felice, and Bononi (2018).[^tmd-versions]
+Smartphones carry enough sensors to infer how someone is getting around, walking, driving, riding a bus, riding a train, without ever asking them. The open question is which of those sensors actually carry that information, and which model turns them into an accurate guess. I answered both, as a final project for STAT 385 at UIC, using the TMD dataset from Carpineti, Lomonaco, Bedogni, Di Felice, and Bononi (2018).[^tmd-versions]
 
 We used the dataset's third and most complete release, \(D_3\), which draws thirty-six features from nine physical sensors, accelerometer, gyroscope, gyroscope uncalibrated, linear acceleration, orientation, rotation vector, game rotation vector, sound, and speed, each one reduced to a mean, minimum, maximum, and standard deviation over a five-second window.
 

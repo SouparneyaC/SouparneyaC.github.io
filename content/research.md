@@ -14,7 +14,7 @@ Built a live order book service for Kalshi's prediction markets: one Python proc
 
 **[Detecting Transportation Mode from Smartphone Sensors](/research/transportation-mode-detection/)**
 
-Built a classification pipeline on the TMD smartphone-sensor dataset (Carpineti et al., 2018) to identify transportation mode from 36 features across nine sensors, with Michelle Segura. Benchmarked nine classifiers on an identical train/test split, from classification trees and PLS-DA through random forests and XGBoost, with tuned XGBoost reaching 97.29% test accuracy. Ran six feature-selection methods — ANOVA, PCA, LASSO, Boruta, RFE, and conditional permutation importance — and showed 14 of the 36 features recover near-peak accuracy.
+Built a classification pipeline on the TMD smartphone-sensor dataset (Carpineti et al., 2018) to identify transportation mode from 36 features across nine sensors. Benchmarked nine classifiers on an identical train/test split, from classification trees and PLS-DA through random forests and XGBoost, with tuned XGBoost reaching 97.29% test accuracy. Ran six feature-selection methods — ANOVA, PCA, LASSO, Boruta, RFE, and conditional permutation importance — and showed 14 of the 36 features recover near-peak accuracy.
 
 [Repository →](https://github.com/SouparneyaC/transportation-mode-detection)
 
