@@ -74,4 +74,4 @@ Agarwal, V., Jiang, W., Tang, Y., and Yang, B. (2013). Uncovering hedge fund ski
 
 Kacperczyk, M., Sialm, C., and Zheng, L. (2008). Unobserved actions of mutual funds. Review of Financial Studies, 21(6), 2379 to 2416.
 
-[Repository →](https://github.com/SouparneyaC/Strategic-Opacity-and-the-13F-Disclosure-Window)
+[Repository →](https://github.com/SouparneyaC/quant-research-studies/tree/main/studies/deadline-filers)

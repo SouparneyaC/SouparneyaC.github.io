@@ -94,4 +94,4 @@ Ben-David, I., et al. (2018). Data quality issues in the Thomson Reuters S34 ins
 
 Rotemberg, J. J. (1984). Financial transaction costs and industrial performance. MIT Sloan Working Paper.
 
-[Repository →](https://github.com/SouparneyaC/Common-Ownership-in-America-QK-Replication)
+[Repository →](https://github.com/SouparneyaC/quant-research-studies/tree/main/studies/common-ownership)

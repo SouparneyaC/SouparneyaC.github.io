@@ -35,7 +35,7 @@ Built a research pipeline on SEC 13F institutional-holdings data from the QuantK
 
 Designed and backtested a two-layer regime-adaptive pairs-trading strategy on the MSCI Australia and MSCI Canada ETFs: a Kalman filter re-estimates the hedge ratio daily instead of fixing it once, gated by a Random Forest classifier that decides whether a wide spread is actually likely to revert before a trade is placed. The strategy trades only 72 days across six years, reaches an annualized Sharpe ratio of 0.36 over the whole sample (the classifier was trained on its first 80 percent), and preserves capital through a 2024 structural divergence a fixed hedge ratio has no way to see coming.
 
-[Repository →](https://github.com/SouparneyaC/adaptive-pairs-trading)
+[Repository →](https://github.com/SouparneyaC/quant-research-studies/tree/main/studies/adaptive-pairs-trading)
 
 **[Crypto microstructure: Forecasting to beat the naive average](/research/crypto-microstructure/)**
 

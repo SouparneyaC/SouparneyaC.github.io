@@ -78,4 +78,4 @@ Goodman-Bacon, A. (2021). Difference-in-differences with variation in treatment 
 
 Kacperczyk, M., Sialm, C., and Zheng, L. (2008). Unobserved actions of mutual funds. Review of Financial Studies, 21(6), 2379 to 2416.
 
-*No public repository; this is coursework, not a maintained project.*
+[Repository →](https://github.com/SouparneyaC/quant-research-studies/tree/main/studies/amendment-disclosure)

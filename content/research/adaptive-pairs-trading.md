@@ -65,6 +65,6 @@ Seventy-two active trading days across six years is a small sample to estimate a
 [^state-dim]: The paper's own equations describe a single time-varying hedge ratio. The actual fitted model estimates a two-dimensional state, a time-varying hedge ratio and a time-varying intercept together, not the hedge ratio alone; the extra intercept term is what lets the filtered spread re-center near zero rather than just re-scale.
 [^iteration]: Two earlier scripts in the same project fit the classifier without the oil and copper features, using only spread volatility, VIX, and the Kalman spread. The oil-and-copper feature set is the one that produced the paper's own reported Sharpe ratio, confirmed directly against the script's own saved output; the alternative configuration in the backtesting comparison above was run by changing that same script's threshold and lag parameters rather than saved as a separate file.
 
-[Repository →](https://github.com/SouparneyaC/adaptive-pairs-trading)
+[Repository →](https://github.com/SouparneyaC/quant-research-studies/tree/main/studies/adaptive-pairs-trading)
 
 [Back to Research →](/research/)
