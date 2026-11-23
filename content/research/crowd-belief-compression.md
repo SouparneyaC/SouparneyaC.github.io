@@ -151,4 +151,4 @@ Peduzzi, P., Concato, J., Kemper, E., Holford, T. R., and Feinstein, A. R. (1996
 
 Riley, R. D., et al. (2019). Minimum sample size for developing a multivariable prediction model.
 
-[Repository →](https://github.com/SouparneyaC/sportspredict-jtc)
+[Repository →](https://github.com/SouparneyaC/jtc-world-cup-forecasting)

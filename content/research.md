@@ -22,7 +22,7 @@ Built a classification pipeline on the TMD smartphone-sensor dataset (Carpineti 
 
 Built a statistical forecasting pipeline for 49,000+ international matches back to 1872, ingesting live match data and real-time odds from exchange APIs, computing point-in-time Elo ratings to remove look-ahead bias. Modeled goal rates with a Poisson regression using a Dixon-Coles low-score correction and Negative Binomial overdispersion, alongside an ordered logit match-result model. Quantified a structural compression of the crowd consensus toward 50% and finished in the top 1.1% of ~3,900 forecasters.
 
-[Repository →](https://github.com/SouparneyaC/sportspredict-jtc)
+[Repository →](https://github.com/SouparneyaC/jtc-world-cup-forecasting)
 
 **QuantKiosk**
 
