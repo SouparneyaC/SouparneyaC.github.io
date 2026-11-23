@@ -34,7 +34,7 @@ A trade signal fires when the normalized spread, a rolling ten-day z-score of th
 
 ## Backtesting
 
-The Random Forest is fit on the first 80 percent of the sample and evaluated on the remaining 20 percent, a single chronological split rather than a walk-forward or repeated cross-validation. The reported Sharpe ratio reflects performance on one held-out period, not an average over several.
+The Random Forest is fit on the first 80 percent of the sample, a single chronological split rather than a walk-forward or repeated cross-validation, but the reported Sharpe ratio of 0.36 is measured over the whole sample, including the 80 percent the classifier was trained on. Split by period, the Sharpe ratio is 0.03 on the training days (52 signal days) and 1.36 on the last 300 days (20 signal days). The last 300 days give the same 1.36 with no classifier at all, only the entry threshold, so the data do not show the Random Forest adding value out of sample.
 
 The paper directly tests whether trading more often, at a lower conviction bar, would have helped. An alternative configuration lowers the entry threshold from 2 standard deviations to 1.25 and shortens the oil and copper trend window from five days to one, which raises the trade count more than fourfold, from 72 days to 323, while the annualized Sharpe ratio falls from 0.36 to 0.29 and the maximum drawdown widens from -3.54 to -5.10 units. More trades, at lower conviction, cost more than they added.
 
@@ -52,11 +52,11 @@ The paper directly tests whether trading more often, at a lower conviction bar, 
 
 ![The strategy's cumulative P&L, staying flat through most of the sample and compounding gains mainly after 2024, when the ML gatekeeper had the most opportunities to reject non-reverting signals](/images/research/adaptive-pairs-trading/macro_enhanced_equity_curve.png)
 
-Most of the equity curve's gain arrives after 2024, exactly the period the naive spread was diverging hardest. The strategy's selectivity is the mechanism, not a side effect: by trading only 72 days, it avoids the stretches where the Kalman filter's own residuals stop behaving like noise and start behaving like a trend, the "falling knife" a static pairs trade has no way to see coming.
+Most of the equity curve's gain arrives after 2024, exactly the period the naive spread was diverging hardest. The same gain appears over the last 300 days without the classifier, so the data attribute it to the entry threshold and the 2024 divergence rather than to the Random Forest.
 
 ## Limitations
 
-Seventy-two active trading days across six years is a small sample to estimate a Sharpe ratio from, and the figure should be read with that in mind rather than treated as a precise estimate. The strategy is tested on exactly one asset pair; nothing here shows whether the same Kalman-plus-classifier structure holds up on a different commodity-linked pair. The 80/20 split is a single train/test boundary, not repeated across multiple splits, so the out-of-sample result reflects one specific holdout period rather than an average over several. The paper's own conclusion treats the current feature set as a starting point, not a finished one, and names interest rate differentials as the next feature to test.
+Seventy-two active trading days across six years is a small sample to estimate a Sharpe ratio from, and the figure should be read with that in mind rather than treated as a precise estimate. The strategy is tested on exactly one asset pair; nothing here shows whether the same Kalman-plus-classifier structure holds up on a different commodity-linked pair. The headline Sharpe ratio is not an out-of-sample number, as described above, and the held-out figure rests on 20 signal days from one stretch, the 2024 divergence. Profit is measured in units of the normalised spread with no transaction costs, and the position is always long the spread on a signal day. The paper's own conclusion treats the current feature set as a starting point, not a finished one, and names interest rate differentials as the next feature to test.
 
 [^kalman]: R.E. Kalman, "A New Approach to Linear Filtering and Prediction Problems," *Journal of Basic Engineering*, 1960.
 [^engle-granger]: Engle, R.F. and Granger, C.W.J., "Co-integration and Error Correction: Representation, Estimation, and Testing," *Econometrica*, 1987.
